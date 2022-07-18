@@ -15,7 +15,7 @@ class Product(models.Model):
     ]
     name = models.CharField(max_length=30)
     description = models.TextField()
-    # category = models.CharField(max_length=30, category=PRODUCT_CATEGORIES)
+    category = models.CharField(max_length=30, category=PRODUCT_CATEGORIES)
     price = models.IntegerField()    
     available = models.BooleanField()
     registered_on = models.DateField()
